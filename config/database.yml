@@ -84,6 +84,3 @@ production:
   <<: *default
   url: "postgresql://postgres:mfIiiPDbFOxyIDPkZezJytRWzDbMgDRx@junction.proxy.rlwy.net:54942/railway"
 
-  database: test_ralways_production
-  username: test_ralways
-  password: <%= ENV["TEST_RALWAYS_DATABASE_PASSWORD"] %>

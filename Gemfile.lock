@@ -7,23 +7,24 @@ GEM
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
       zeitwerk (~> 2.6)
+    actionmailbox (7.1.4)
       actionpack (= 7.1.4)
       activejob (= 7.1.4)
       activerecord (= 7.1.4)
       activestorage (= 7.1.4)
       activesupport (= 7.1.4)
-
+      mail (>= 2.7.1)
       net-imap
-
+      net-pop
       net-smtp
-
+    actionmailer (7.1.4)
       actionpack (= 7.1.4)
       actionview (= 7.1.4)
       activejob (= 7.1.4)
       activesupport (= 7.1.4)
-
+      mail (~> 2.5, >= 2.5.4)
       net-imap
-
+      net-pop
       net-smtp
       rails-dom-testing (~> 2.2)
     actionpack (7.1.4)
@@ -99,10 +100,10 @@ GEM
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-
+    mail (2.8.1)
       mini_mime (>= 0.1.1)
       net-imap
-
+      net-pop
       net-smtp
     marcel (1.0.4)
     mini_mime (1.1.5)
@@ -111,6 +112,8 @@ GEM
     mutex_m (0.2.0)
     net-imap (0.4.15)
       date
+      net-protocol
+    net-pop (0.1.2)
       net-protocol
     net-protocol (0.2.2)
       timeout
@@ -145,6 +148,8 @@ GEM
       webrick (~> 1.8)
     rails (7.1.4)
       actioncable (= 7.1.4)
+      actionmailbox (= 7.1.4)
+      actionmailer (= 7.1.4)
       actionpack (= 7.1.4)
       actiontext (= 7.1.4)
       actionview (= 7.1.4)

@@ -58,6 +58,7 @@ Rails.application.configure do
 
   config.hosts << /.*\.sonmyd\.com/
 
+  config.force_ssl = true
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 

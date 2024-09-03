@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  url: "postgresql://postgres:mfIiiPDbFOxyIDPkZezJytRWzDbMgDRx@junction.proxy.rlwy.net:54942/railway"
+  url: "postgresql://postgres:JnmaCeHblmuAVjwNjaQYeACHzCpsNFvV@autorack.proxy.rlwy.net:33398/railway"
   database: test_ralways_development
 
   # The specified database role being used to connect to PostgreSQL.
@@ -82,5 +82,5 @@ test:
 #
 production:
   <<: *default
-  url: "postgresql://postgres:mfIiiPDbFOxyIDPkZezJytRWzDbMgDRx@junction.proxy.rlwy.net:54942/railway"
+  url: "postgresql://postgres:JnmaCeHblmuAVjwNjaQYeACHzCpsNFvV@autorack.proxy.rlwy.net:33398/railway"
 
